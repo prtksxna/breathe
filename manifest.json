@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "Test",
+  "version": "1.0",
+
+  "description": "Test.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "chrome_url_overrides": {
+    "newtab": "test.html"
+  }
+
+}
