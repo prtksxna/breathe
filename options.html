@@ -7,9 +7,23 @@
 </head>
 <body>
 	<form>
-		<label>Background color<input type="color" id="color" ></label>
-		<label>Text color<input type="color" id="textcolor" ></label>
-		<label>Messages<textarea id="messages" ></textarea></label>
+		<label>
+			<span>Background color</span>
+			<input type="color" id="bgcolor" value="#ca1f46">
+		</label>
+
+		<label>
+			<span>Text color</span>
+			<input type="color" id="textcolor" value="#ffffff">
+		</label>
+
+		<label>
+			<span>Messages<small> (one per line)</small></span>
+			<textarea id="messages" >
+Breathe
+Sit straight
+			</textarea>
+		</label>
 		<button type="submit">Save</button>
 	</form>
 
