@@ -6,7 +6,9 @@
   "description": "A Firefox WebExtension reminding you to breathe, or anything else.",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/48.png",
+    "96": "icons/96.png",
+    "128": "icons/128.png"
   },
 
   "chrome_url_overrides": {
