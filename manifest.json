@@ -10,7 +10,7 @@
   },
 
   "chrome_url_overrides": {
-    "newtab": "test.html"
+    "newtab": "index.html"
   },
 
   "options_ui": {
