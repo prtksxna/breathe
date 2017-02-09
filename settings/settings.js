@@ -10,8 +10,8 @@ function saveOptions( e ) {
 function restoreOptions() {
 
 	function setCurrentChoice( result ) {
-		document.querySelector( '#bgcolor' ).value = result.bgcolor || '#ca1f46';
-		document.querySelector( '#textcolor' ).value = result.textcolor || '#ffffff';
+		document.querySelector( '#bgcolor' ).value = result.bgcolor || '#ffffff';
+		document.querySelector( '#textcolor' ).value = result.textcolor || '#b3b3b3';
 		document.querySelector( '#messages' ).value = result.messages || 'Breathe';
 	};
 
