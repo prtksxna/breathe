@@ -1,3 +1,9 @@
-![Breathe](https://github.com/prtksxna/breathe/raw/master/icons/96.png) 
+<p align="center">
+  <img src="https://github.com/prtksxna/breathe/raw/master/icons/128.png">
+</p>
 
-A Firefox webextension to remind you to _breathe_, or anything else.
+# Breathe [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]() [![ffversion](https://img.shields.io/badge/Firefox%20Version-54%2B-green.svg)]() [![download](https://img.shields.io/badge/install%20on-firefox-blue.svg)](https://addons.mozilla.org/en-US/firefox/addon/breathe_newtab/)
+
+_A Firefox webextension to remind you to breathe, or anything else._
+
+Inspired by [@quiddity-wp](https://github.com/quiddity-wp)'s [blanketfort homepage](http://www.blanketfort.com/exit.html), this extension shows you a simple message of your choice every time you open a new tab. You can create a list of messages that the extension will randomly choose from. You can also change the colors and fonts of the message.
