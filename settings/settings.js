@@ -1,3 +1,5 @@
+var browser = browser || chrome;
+
 function saveOptions( e ) {
 	e.preventDefault();
 	browser.storage.local.set( {

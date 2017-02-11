@@ -1,4 +1,6 @@
-browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages' ] ).then( function ( r ) {
+var browser = browser || chrome;
+
+browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages' ], function ( r ) {
 	var  m = r.messages || 'Breathe';
 
 	m = m.split( '\n' );
