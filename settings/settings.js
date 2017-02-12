@@ -18,7 +18,7 @@ function restoreOptions() {
 	};
 
 	function onError( error ) {
-		console.log( `Error: ${error}` );
+		// Do something
 	};
 
 	var getting = browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages' ] );
