@@ -1,6 +1,26 @@
 var browser = browser || chrome;
 
-function saveOptions( e ) {
+// Restore the saved options
+document.addEventListener( 'DOMContentLoaded', function () {
+	browser.storage.local.get( [
+		'bgcolor',
+		'textcolor',
+		'messages',
+		'textsize',
+		'font',
+		'bold'
+	], function ( r ) {
+		document.querySelector( '#bgcolor' ).value = r.bgcolor || '#ffffff';
+		document.querySelector( '#textcolor' ).value = r.textcolor || '#b3b3b3';
+		document.querySelector( '#messages' ).value = r.messages || 'Breathe';
+		document.querySelector( '#textsize' ).value = r.textsize || '30';
+		document.querySelector( '#font' ).value = r.font || '';
+		document.querySelector( '#bold' ).checked = ( r.bold === undefined ) ? true : r.bold;
+	} );
+} );
+
+// Save options
+document.querySelector( 'form' ).addEventListener( 'submit', function ( e ) {
 	e.preventDefault();
 	browser.storage.local.set( {
 		bgcolor: document.querySelector( '#bgcolor' ).value,
@@ -10,33 +30,4 @@ function saveOptions( e ) {
 		font: document.querySelector( '#font' ).value,
 		bold: document.querySelector( '#bold' ).checked
 	} );
-};
-
-function restoreOptions() {
-
-	function setCurrentChoice( result ) {
-		document.querySelector( '#bgcolor' ).value = result.bgcolor || '#ffffff';
-		document.querySelector( '#textcolor' ).value = result.textcolor || '#b3b3b3';
-		document.querySelector( '#messages' ).value = result.messages || 'Breathe';
-		document.querySelector( '#textsize' ).value = result.textsize || '30';
-		document.querySelector( '#font' ).value = result.font || '';
-		document.querySelector( '#bold' ).checked = ( result.bold === undefined ) ? true : result.bold;
-	};
-
-	function onError( error ) {
-		// Do something
-	};
-
-	var getting = browser.storage.local.get( [
-		'bgcolor',
-		'textcolor',
-		'messages',
-		'textsize',
-		'font',
-		'bold'
-	] );
-	getting.then( setCurrentChoice, onError );
-}
-
-document.addEventListener( 'DOMContentLoaded', restoreOptions );
-document.querySelector( 'form' ).addEventListener( 'submit', saveOptions );
+} );
