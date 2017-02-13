@@ -1,10 +1,14 @@
 var browser = browser || chrome;
 
-browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages', 'textsize' ], function ( r ) {
+browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages', 'textsize', 'font' ], function ( r ) {
 	var  m = r.messages || 'Breathe';
 
 	m = m.split( '\n' );
 	m = m[ Math.floor( Math.random() * m.length ) ];
+
+	if ( r.font !== '' ) {
+		document.querySelector( 'h1' ).style.fontFamily = r.font;
+	}
 
 	document.querySelector( 'h1' ).textContent = m;
 	document.querySelector( 'h1' ).style.fontSize = r.textsize + 'px' || '30px';

@@ -6,7 +6,8 @@ function saveOptions( e ) {
 		bgcolor: document.querySelector( '#bgcolor' ).value,
 		textcolor: document.querySelector( '#textcolor' ).value,
 		messages: document.querySelector( '#messages' ).value,
-		textsize: document.querySelector( '#textsize' ).value
+		textsize: document.querySelector( '#textsize' ).value,
+		font: document.querySelector( '#font' ).value
 	} );
 };
 
@@ -17,13 +18,20 @@ function restoreOptions() {
 		document.querySelector( '#textcolor' ).value = result.textcolor || '#b3b3b3';
 		document.querySelector( '#messages' ).value = result.messages || 'Breathe';
 		document.querySelector( '#textsize' ).value = result.textsize || '30';
+		document.querySelector( '#font' ).value = result.font || '';
 	};
 
 	function onError( error ) {
 		// Do something
 	};
 
-	var getting = browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages', 'textsize' ] );
+	var getting = browser.storage.local.get( [
+		'bgcolor',
+		'textcolor',
+		'messages',
+		'textsize',
+		'font'
+	] );
 	getting.then( setCurrentChoice, onError );
 }
 
