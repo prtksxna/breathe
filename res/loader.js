@@ -1,6 +1,6 @@
 var browser = browser || chrome;
 
-browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages', 'textsize', 'font' ], function ( r ) {
+browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages', 'textsize', 'font', 'bold' ], function ( r ) {
 	var  m = r.messages || 'Breathe';
 
 	m = m.split( '\n' );
@@ -8,6 +8,10 @@ browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages', 'textsize', 'fo
 
 	if ( r.font !== '' ) {
 		document.querySelector( 'h1' ).style.fontFamily = r.font;
+	}
+
+	if ( r.bold === false ) {
+		document.querySelector( 'h1' ).style.fontWeight = 400;
 	}
 
 	document.querySelector( 'h1' ).textContent = m;

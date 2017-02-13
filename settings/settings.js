@@ -7,7 +7,8 @@ function saveOptions( e ) {
 		textcolor: document.querySelector( '#textcolor' ).value,
 		messages: document.querySelector( '#messages' ).value,
 		textsize: document.querySelector( '#textsize' ).value,
-		font: document.querySelector( '#font' ).value
+		font: document.querySelector( '#font' ).value,
+		bold: document.querySelector( '#bold' ).checked
 	} );
 };
 
@@ -19,6 +20,7 @@ function restoreOptions() {
 		document.querySelector( '#messages' ).value = result.messages || 'Breathe';
 		document.querySelector( '#textsize' ).value = result.textsize || '30';
 		document.querySelector( '#font' ).value = result.font || '';
+		document.querySelector( '#bold' ).checked = ( result.bold === undefined ) ? true : result.bold;
 	};
 
 	function onError( error ) {
@@ -30,7 +32,8 @@ function restoreOptions() {
 		'textcolor',
 		'messages',
 		'textsize',
-		'font'
+		'font',
+		'bold'
 	] );
 	getting.then( setCurrentChoice, onError );
 }
