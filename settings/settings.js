@@ -25,7 +25,7 @@ document.querySelector( 'form' ).addEventListener( 'submit', function ( e ) {
 	browser.storage.local.set( {
 		bgcolor: document.querySelector( '#bgcolor' ).value,
 		textcolor: document.querySelector( '#textcolor' ).value,
-		messages: document.querySelector( '#messages' ).value,
+		messages: document.querySelector( '#messages' ).value.trim(),
 		textsize: document.querySelector( '#textsize' ).value,
 		font: document.querySelector( '#font' ).value,
 		bold: document.querySelector( '#bold' ).checked
