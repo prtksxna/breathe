@@ -29,3 +29,11 @@ button {
 	background: #4c9ed9;
 	color: white;
 }
+
+#preview {
+	height: 150px;
+	width: 400px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
