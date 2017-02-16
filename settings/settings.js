@@ -20,14 +20,17 @@ document.addEventListener( 'DOMContentLoaded', function () {
 } );
 
 // Save options
-document.querySelector( 'form' ).addEventListener( 'submit', function ( e ) {
-	e.preventDefault();
-	browser.storage.local.set( {
-		bgcolor: document.querySelector( '#bgcolor' ).value,
-		textcolor: document.querySelector( '#textcolor' ).value,
-		messages: document.querySelector( '#messages' ).value.trim(),
-		textsize: document.querySelector( '#textsize' ).value,
-		font: document.querySelector( '#font' ).value,
-		bold: document.querySelector( '#bold' ).checked
+var settingsInput = document.querySelectorAll( 'input, textarea' );
+for ( let input of settingsInput ) {
+	input.addEventListener( 'change', function ( e ) {
+		e.preventDefault();
+		browser.storage.local.set( {
+			bgcolor: document.querySelector( '#bgcolor' ).value,
+			textcolor: document.querySelector( '#textcolor' ).value,
+			messages: document.querySelector( '#messages' ).value.trim(),
+			textsize: document.querySelector( '#textsize' ).value,
+			font: document.querySelector( '#font' ).value,
+			bold: document.querySelector( '#bold' ).checked
+		} );
 	} );
-} );
+}
