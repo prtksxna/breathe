@@ -6,7 +6,7 @@ browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages', 'textsize', 'fo
 	m = m.split( '\n' );
 	m = m[ Math.floor( Math.random() * m.length ) ];
 
-	if ( r.font !== '' ) {
+	if ( r.font !== undefined && r.font !== '' ) {
 		document.querySelector( 'h1' ).style.fontFamily = r.font;
 	}
 
