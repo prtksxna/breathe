@@ -10,6 +10,11 @@ Inspired by [@quiddity-wp](https://github.com/quiddity-wp)'s [blanketfort homepa
 
 ## Screenshots
 
+|Chrome (default) | Firefox | Firefox |
+|--|--|--|
+|![default chrome](https://cloud.githubusercontent.com/assets/9491/23954656/e5bd3874-09bd-11e7-8ec2-0b8c3a41ee53.png)|![setting1 ff](https://cloud.githubusercontent.com/assets/9491/23954655/e5bc78f8-09bd-11e7-91e3-e6073df52912.png)|![setting2 ff](https://cloud.githubusercontent.com/assets/9491/23954657/e5c948ee-09bd-11e7-9e8a-2c39ceb261ea.png)|
+
+
 ### Settings
 |Chrome|Firefox|
 |--|--|
