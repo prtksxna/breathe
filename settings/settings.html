@@ -6,42 +6,44 @@
 	<link rel="stylesheet" type="text/css" href="settings.css" />
 </head>
 <body>
-	<div id="preview"></div>
-	<form>
-		<label>
-			<span>Background color</span>
-			<input type="color" id="bgcolor" value="#ffffff">
-		</label>
+	<div id="settings">
+		<form>
+			<label>
+				<span>Background color</span>
+				<input type="color" id="bgcolor" value="#ffffff">
+			</label>
 
-		<label>
-			<span>Text color</span>
-			<input type="color" id="textcolor" value="#b3b3b3">
-		</label>
+			<label>
+				<span>Text color</span>
+				<input type="color" id="textcolor" value="#b3b3b3">
+			</label>
 
-		<label>
-			<span>Text size</span>
-			<input type="range" min="20" max="100" id="textsize" value="30" />
-		</label>
+			<label>
+				<span>Text size</span>
+				<input type="range" min="20" max="100" id="textsize" value="30" />
+			</label>
 
-		<label>
-			<span>Font <small>(leave empty for default)</small></span>
-			<input type="text" id="font"/>
-		</label>
+			<label>
+				<span>Font <small>(leave empty for default)</small></span>
+				<input type="text" id="font"/>
+			</label>
 
-		<label>
-			<span>Bold</span>
-			<input type="checkbox" id="bold" checked="true"/>
-		</label>
+			<label>
+				<span>Bold</span>
+				<input type="checkbox" id="bold" checked="true"/>
+			</label>
 
-		<label>
-			<span>Messages<small> (one per line)</small></span>
-			<textarea id="messages" >
+			<label>
+				<span>Messages<small> (one per line)</small></span>
+				<textarea id="messages" >
 Breathe
 Sit straight
-			</textarea>
-		</label>
-	</form>
+				</textarea>
+			</label>
+		</form>
+		<div id="preview"><h1></h1></div>
 
+	</div>
 	<script src="settings.js"></script>
 </body>
 </html>

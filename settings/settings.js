@@ -24,6 +24,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 // Listen to changes, save settings, and update preview
 var preview = document.querySelector( '#preview' ),
+	h1 = preview.querySelector( 'h1' ),
 	settingsInput = document.querySelectorAll( 'input, textarea' );
 
 /* jshint loopfunc: true */
@@ -41,17 +42,19 @@ for ( let input of settingsInput ) {
 
 		// Update preview
 		if (  font !== undefined && font !== '' ) {
-			preview.style.fontFamily = font;
+			h1.style.fontFamily = font;
+		} else {
+			h1.style.fontFamily = '-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif';
 		}
 
 		if ( bold === undefined || bold === false ) {
-			preview.style.fontWeight = 400;
+			h1.style.fontWeight = 400;
 		} else {
-			preview.style.fontWeight = 600;
+			h1.style.fontWeight = 600;
 		}
 
-		preview.textContent = textcontent;
-		preview.style.fontSize = textsize + 'px' || '30px';
+		h1.textContent = textcontent;
+		h1.style.fontSize = textsize + 'px' || '30px';
 		preview.style.backgroundColor = bgcolor || '#fff';
 		preview.style.color = textcolor || '#b3b3b3';
 

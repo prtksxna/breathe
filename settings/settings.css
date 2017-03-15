@@ -1,22 +1,47 @@
+#settings {
+	display: flex;
+}
+
 form {
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 	font-size: 14px;
+	padding: 0 20px;
+	width: 500px;
+}
+
+#preview {
+	width: 500px;
+	max-width: 500px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#preview h1 {
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+	font-weight: 600;
 }
 
 label {
-	display: block
+	display: block;
+	margin-top: 20px;
 }
 
 label span {
 	display: inline-block;
-	width: 290px;
+	width: 150px;
+	font-weight: bold;
 	vertical-align: top;
 }
 
 textarea {
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 	font-size: 14px;
-	width: 300px;
+	width: 200px;
 	height: 200px;
 }
 
@@ -28,14 +53,4 @@ button {
 	float: right;
 	background: #4c9ed9;
 	color: white;
-}
-
-#preview {
-	height: 150px;
-	width: 400px;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-	font-weight: 600;
 }
