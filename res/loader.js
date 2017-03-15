@@ -1,4 +1,4 @@
-var browser = browser || chrome;
+var browser = browser || chrome; // eslint-disable-line no-undef
 
 browser.storage.local.get( [ 'bgcolor', 'textcolor', 'messages', 'textsize', 'font', 'bold' ], function ( r ) {
 	var  m = r.messages || 'Breathe';

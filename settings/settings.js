@@ -1,4 +1,4 @@
-var browser = browser || chrome;
+var browser = browser || chrome; // eslint-disable-line no-undef
 
 // Restore the saved options
 document.addEventListener( 'DOMContentLoaded', function () {
