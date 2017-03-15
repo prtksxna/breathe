@@ -3,9 +3,12 @@
   "name": "Breathe",
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "lint": "./node_modules/.bin/eslint ./res/*.js ./settings/*.js"
+    "lint": "./node_modules/.bin/eslint ./res/*.js ./settings/*.js",
+    "hint": "./node_modules/.bin/jshint ./res/*.js ./settings/*.js",
+    "test": "npm run hint && npm run lint"
   },
   "devDependencies": {
-    "eslint": "^3.17.1"
+    "eslint": "^3.17.1",
+    "jshint": "^2.9.4"
   }
 }

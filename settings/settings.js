@@ -23,6 +23,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 var preview = document.querySelector( '#preview' ),
 	settingsInput = document.querySelectorAll( 'input, textarea' );
 
+/* jshint loopfunc: true */
 for ( let input of settingsInput ) {
 	input.addEventListener( 'change', function ( e ) {
 		e.preventDefault();
@@ -61,3 +62,4 @@ for ( let input of settingsInput ) {
 		} );
 	} );
 }
+/* jshint loopfunc: false */
