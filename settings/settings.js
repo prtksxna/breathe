@@ -16,6 +16,9 @@ document.addEventListener( 'DOMContentLoaded', function () {
 		document.querySelector( '#textsize' ).value = r.textsize || '30';
 		document.querySelector( '#font' ).value = r.font || '';
 		document.querySelector( '#bold' ).checked = ( r.bold === undefined ) ? true : r.bold;
+
+		// Trigger a change to load preview
+		document.querySelector( '#bgcolor' ).dispatchEvent( new Event( 'change' ) );
 	} );
 } );
 
@@ -37,12 +40,14 @@ for ( let input of settingsInput ) {
 			bold = document.querySelector( '#bold' ).checked;
 
 		// Update preview
-		if (  font !== '' ) {
+		if (  font !== undefined && font !== '' ) {
 			preview.style.fontFamily = font;
 		}
 
-		if ( bold === false ) {
+		if ( bold === undefined || bold === false ) {
 			preview.style.fontWeight = 400;
+		} else {
+			preview.style.fontWeight = 600;
 		}
 
 		preview.textContent = textcontent;
