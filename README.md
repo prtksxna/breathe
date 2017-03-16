@@ -19,3 +19,7 @@ Inspired by [@quiddity-wp](https://github.com/quiddity-wp)'s [blanketfort homepa
 |Chrome|Firefox|
 |--|--|
 |![Chrome settings](https://cloud.githubusercontent.com/assets/9491/23954259/cf023978-09bc-11e7-8532-19653ae08f8e.png)|![Firefox settings](https://cloud.githubusercontent.com/assets/9491/23954276/d9437e7e-09bc-11e7-932b-5faa4fe9845e.png)|
+
+## Install
+
+Use the links on top for the quick install. To use the source, clone this repository and load it manually via `about:debugging` on Firefox, or `chrome://extensions/` on Chrome.
