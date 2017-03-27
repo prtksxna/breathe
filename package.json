@@ -5,7 +5,8 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "lint": "./node_modules/.bin/eslint ./res/*.js ./settings/*.js",
     "hint": "./node_modules/.bin/jshint ./res/*.js ./settings/*.js",
-    "test": "npm run hint && npm run lint"
+    "test": "npm run hint && npm run lint",
+    "postversion": "npm run changelog && echo 'Dont forget to update manifest.json'"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
