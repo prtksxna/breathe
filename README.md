@@ -2,7 +2,7 @@
   <img src="https://github.com/prtksxna/breathe/raw/master/icons/128.png">
 </p>
 
-# Breathe [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]() [![Build Status](https://travis-ci.org/prtksxna/breathe.svg?branch=master)](https://travis-ci.org/prtksxna/breathe) [![download](https://img.shields.io/badge/install%20on-firefox-blue.svg)](https://addons.mozilla.org/en-US/firefox/addon/breathe_newtab/)
+# Breathe [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]() [![Build Status](https://travis-ci.org/prtksxna/breathe.svg?branch=master)](https://travis-ci.org/prtksxna/breathe) [![install on ff](https://img.shields.io/badge/install%20on-firefox-blue.svg)](https://addons.mozilla.org/en-US/firefox/addon/breathe_newtab/) [![install on charme](https://img.shields.io/badge/install%20on-chrome-yellow.svg)](https://chrome.google.com/webstore/detail/breathe/lnepdnkpeilknjfjhibhcbmpmmdpmffa)
 
 _A Firefox webextension to remind you to breathe, or anything else._
 
