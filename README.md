@@ -6,7 +6,7 @@
 
 _A Firefox webextension to remind you to breathe, or anything else._
 
-Inspired by [@quiddity-wp](https://github.com/quiddity-wp)'s [blanketfort homepage](http://www.blanketfort.com/exit.html), this extension shows you a simple message of your choice every time you open a new tab. You can create a list of messages that the extension will randomly choose from. You can also change the colors and fonts of the message.
+Inspired by a friend's [homepage](https://www.blanketfort.com/exit.html), this extension shows you a simple message of your choice every time you open a new tab. You can create a list of messages that the extension will randomly choose from. You can also change the colors and fonts of the message.
 
 ## Screenshots
 
